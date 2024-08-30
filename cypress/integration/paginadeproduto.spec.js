@@ -61,7 +61,7 @@ describe('Pagina de produto do saucedemo', function() {
             cy.visit('https://www.saucedemo.com/v1/cart.html')
         })
     //Verifica botao 'Voltar aos produtos'
-    it.only('Verifica botao Voltar aos produtos', function() {
+    it('Verifica botao Voltar aos produtos', function() {
     cy.get('.btn_secondary').should('exist');
     cy.get('.btn_secondary').click({ force: true });
     cy.get('.product_label').should('exist');
